@@ -1,15 +1,16 @@
+// import ingenlogo from "../images/ingen_logo.png";
+
 export const Bio = {
   name: "Arpit Kumar",
   roles: [
     "Cloud Engineer",
     "DevOps Engineer",
     "Cloud Architect",
-    "Plateform Engineer",
     "Site Reliability Engineer",
     "Software Developer",
   ],
   description:
-    "I am a dynamic and adaptable Cloud Engineer with a strong passion for designing, deploying, and optimizing cloud-native solutions. With a solid foundation inPython, PHP, and backend software development, I build scalable, secure, and efficient cloud applications. I approach every challenge with a growth mindset and a commitment to delivering high-quality results. My portfolio reflects hands-on expertise with cloud services and automation, showcasing my ability to create impactful cloud solutions.",
+    "I am a dynamic and adaptable Cloud Engineer with a strong passion for designing, deploying, and optimizing cloud-native solutions. With a solid foundation in python, PHP, and backend software development, I build scalable, secure, and efficient cloud applications. I approach every challenge with a growth mindset and a commitment to delivering high-quality results. My portfolio reflects hands-on expertise with cloud services and automation, showcasing my ability to create impactful cloud solutions.",
   github: "https://github.com/Apt1075",
   resume:
     "https://drive.google.com/file/d/1R2LkQgE79GW5zbW04tCM7m6dYusvK4HB/view?usp=sharing",
@@ -99,8 +100,8 @@ export const skills = [
         image:"https://www.svgrepo.com/show/331370/docker.svg",
       },
       {
-        name: "Bash Scripting",
-        image:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Gnu-bash-logo.svg/1200px-Gnu-bash-logo.svg.png",
+        name: "Bash Script",
+        image:"https://www.svgrepo.com/show/353478/bash-icon.svg",
       },
       {
         name: "CI/CD",
@@ -122,7 +123,7 @@ export const skills = [
       {
         name: "Postman",
         image:
-          "https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667",
+          "https://www.svgrepo.com/show/354202/postman-icon.svg",
       },
       {
         name: "Jira",
@@ -139,7 +140,7 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
+    // img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
     role: "Php Developer Intern",
     company: "Ingen Technologies Pvt. Ltd.",
     date: "Nov 2021 - Sep 2022",
@@ -160,30 +161,45 @@ export const experiences = [
   
   {
     id: 1,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
+    // img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
     role: "Software Developer",
     company: "Ingen Technologies Pvt Ltd",
-    date: "Oct 2022 - present",
+    date: "Oct 2022 - Sep 2024",
     desc: "Developed automation scripts for managing logistics workflows, improving script execution time by 30%, resulting in faster processing of tasks like vehicle tracking and fleet management , Implemented integrations with third-party APIs for real-time tracking,vehicle location updates, and fuel management systems",
     skills: [
-      "Jenkins",
-      "ReactJS",
-      "NodeJs",
+      "Python",
       "Aws(S3, EC2 and RDS)",
+      "Github Actions",
       "CI/CD",
-      "JavaScript",
       "Docker",
       "Jira",
       "MongoDB",
     ],
   },
   
+    {
+    id: 2,
+    // img:ingenlogo,
+    role: "Cloud Engineer",
+    company: "Ingen Technologies Pvt Ltd",
+    date: "Oct 2024- present",
+    desc: "Designed and managed AWS cloud infrastructure using EC2, VPC, S3, IAM, and RDS, ensuring secure and scalable deployment environments,Implemented monitoring and alerting using CloudWatch, improving system visibility and reducing incident resolution time,Improved CI/CD pipelines using CodePipeline, enabling automated builds, testing, and deployment for internal applications.",
+    skills: [
+      "Jenkins",
+      "Aws(EC2, VPC (Networking), S3, IAM, RDS, CloudWatch, ECS, Lambda,DynamoDB, CodePipeline, CodeDeploy)",
+      "GitHub Actions",
+      "CI/CD",
+      "Docker",
+      "Jira",
+    ],
+  },
+
 ];
 
 export const education = [
   {
     id: 0,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Kiit.jpeg?alt=media&token=3839d520-c59d-4341-ad8f-0980c98de4dd",
+    // img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Kiit.jpeg?alt=media&token=3839d520-c59d-4341-ad8f-0980c98de4dd",
     College: "Naraina College Of Engineering & Technology, Kanpur",
     date: "Sep 2022 - Jul 2024",
     grade: "7.71 CGPA",
@@ -192,7 +208,7 @@ export const education = [
   },
   {
     id: 1,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
+    // img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
     College: "Krishna College of Higher Education, Kanpur",
     date: "Apr 2019 - May 2022",
     grade: "64.2%",
@@ -205,28 +221,28 @@ export const projects = [
   
   // {
   //   id: 0,
-  //   title: "Podstream",
+  //   title: "Serverless Static Website Hosting with Amazon S3",
   //   date: "Apr 2023 - May 2023",
   //   description:
-  //     "Developed a full-stack web application that allows users to search for, play, and pause their favorite podcasts on demand and create podcasts. Implemented user authentication using Google Auth and Jwt Auth, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
+  //     "Designed and deployed a serverless static website using Amazon S3, eliminating the need for traditional servers. The website content (HTML, CSS, JavaScript) is stored in an S3 bucket configured for static website hosting. Implemented public access policies to securely serve content over HTTP/HTTPS and ensured high availability and durability using AWS-managed infrastructure.",
   //   image:
   //     "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
-  //   tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
-  //   category: "web app",
+  //   tags: ["Amazon S3", "IAM & Bucket Policies", "CloudFront", "Route 53"],
+  //   category: "AWS app",
   //   github: "#",
   //   webapp: "https://podstream.netlify.app/",
   //   member: [
+  //     // {
+  //     //   name: "#",
+  //     //   img: "",
+  //     //   linkedin: "#",
+  //     //   github: "#",
+  //     // },
   //     {
-  //       name: "#",
-  //       img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-  //       linkedin: "#",
-  //       github: "#",
-  //     },
-  //     {
-  //       name: "Upasana Chaudhuri",
+  //       name: "Arpit Kumar",
   //       img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-  //       linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-  //       github: "https://github.com/upasana0710",
+  //       linkedin: "https://www.linkedin.com/in/apt1075/",
+  //       github: "https://github.com/Apt1075",
   //     },
   //   ],
   // },
@@ -246,36 +262,9 @@ export const projects = [
   //     "Redux",
   //     "NodeMailer",
   //   ],
-  //   category: "web app",
+  //   category: "AWS app",
   //   github: "#",
   //   webapp: "https://vexa-app.netlify.app/",
-  // },
-  // {
-  //   id: 2,
-  //   title: "Brain Tumor Detection",
-  //   date: "Jan 2023 - Mar 2023",
-  //   description:
-  //     "Preprocessed and augmented the dataset to improve model accuracy, trained the model, created API using model and Python, and used React web app for the project's front end. Achievements: Achieved an accuracy of 99.2% to accurately detect brain tumors from medical images.",
-  //   image:
-  //     "#",
-  //   tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
-  //   category: "machine learning",
-  //   github: "#",
-  //   webapp: "https://brain-tumor.netlify.app/",
-  //   member: [
-  //     {
-  //       name: "#",
-  //       img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-  //       linkedin: "#",
-  //       github: "#",
-  //     },
-  //     {
-  //       name: "Upasana Chaudhuri",
-  //       img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-  //       linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-  //       github: "https://github.com/upasana0710",
-  //     },
-  //   ],
   // },
   // {
   //   id: 3,
@@ -286,7 +275,7 @@ export const projects = [
   //   image:
   //     "https://camo.githubusercontent.com/fbf405040ae86b5d4a40f24e4ac034982cb8c0e2d850560ba64527997b258be8/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f6c6f67696e2d65613565322e61707073706f742e636f6d2f6f2f4255434b4f49442532302831292e706e673f616c743d6d6564696126746f6b656e3d32653735376235372d323964372d346263612d613562322d653164346538313432373435",
   //   tags: ["Kotlin", "MVVM", "Room Database", "Google Drive Cloud API"],
-  //   category: "android app",
+  //   category: "Devops app",
   //   github: "#",
   //   webapp: "#",
   // },
@@ -299,16 +288,16 @@ export const projects = [
   //   image:
   //     "https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png",
   //   tags: ["React Native", "JavaScript", "Axios"],
-  //   category: "android app",
+  //   category: "Devops app",
   //   github: "#",
   //   webapp: "#",
   // },
 ];
 
-export const TimeLineData = [
-  { year: 2017, text: "Started my journey" },
-  { year: 2018, text: "Worked as a freelance developer" },
-  { year: 2019, text: "Founded JavaScript Mastery" },
-  { year: 2020, text: "Shared my projects with the world" },
-  { year: 2021, text: "Started my own platform" },
-];
+// export const TimeLineData = [
+//   { year: 2017, text: "Started my journey" },
+//   { year: 2018, text: "Worked as a freelance developer" },
+//   { year: 2019, text: "Founded JavaScript Mastery" },
+//   { year: 2020, text: "Shared my projects with the world" },
+//   { year: 2021, text: "Started my own platform" },
+// ];
