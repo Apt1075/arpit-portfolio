@@ -1,4 +1,5 @@
-// import ingenlogo from "../images/ingen_logo.png";
+import CiCDPipelineDiagram from "../images/CiCDPipelineDiagram.png";
+
 
 export const Bio = {
   name: "Arpit Kumar",
@@ -266,19 +267,27 @@ export const projects = [
   //   github: "#",
   //   webapp: "https://vexa-app.netlify.app/",
   // },
-  // {
-  //   id: 3,
-  //   title: "Buckoid",
-  //   date: "Dec 2021 - Apr 2022",
-  //   description:
-  //     "App Is Currently In Playstore 100+ Downloads. This Project proposes an “Expense Tracking App”. Keep track of your personal expenses and compare them to your monthly income with the budget planner. It has Google Drive Cloud API for Backup of User Room Database. Made with Kotlin in MVVM Architecture & Live Data.",
-  //   image:
-  //     "https://camo.githubusercontent.com/fbf405040ae86b5d4a40f24e4ac034982cb8c0e2d850560ba64527997b258be8/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f6c6f67696e2d65613565322e61707073706f742e636f6d2f6f2f4255434b4f49442532302831292e706e673f616c743d6d6564696126746f6b656e3d32653735376235372d323964372d346263612d613562322d653164346538313432373435",
-  //   tags: ["Kotlin", "MVVM", "Room Database", "Google Drive Cloud API"],
-  //   category: "Devops app",
-  //   github: "#",
-  //   webapp: "#",
-  // },
+{
+  id: 3,
+  title: "CI/CD React DevOps Project",
+  date: "Dec 2024 - Present",
+  description:
+    "This single-page React application was developed by Arpit Kumar to demonstrate a real-world CI/CD pipeline using modern DevOps practices. GitHub webhooks are used to automatically trigger Jenkins builds on every code push. Jenkins builds a Docker image, deploys the application on an EC2 instance, and sends email notifications for build success or failure. This project showcases end-to-end CI/CD automation and is suitable for interviews and portfolio demonstration.",
+  // image: "../images/CiCDPipelineDiagram.png",
+  image: CiCDPipelineDiagram,
+  tags: [
+    "React",
+    "Docker",
+    "Jenkins",
+    "GitHub Webhook",
+    "AWS EC2",
+    "CI/CD"
+  ],
+  category: "Devops app",
+  github: "https://github.com/Apt1075/CICD-React-app-using-jenkins-docker-github-webhook-ubuntu-aws-ec2-.git",
+  webapp: "https://cicd-react-app-using-jenkins-docker.vercel.app/"
+}
+,
   // {
   //   id: 10,
   //   title: "Job Finding App",
