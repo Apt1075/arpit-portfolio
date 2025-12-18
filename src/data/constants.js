@@ -1,4 +1,5 @@
 import CiCDPipelineDiagram from "../images/CiCDPipelineDiagram.png";
+import IMAGE1 from "../images/Heroimage1.png";
 
 
 export const Bio = {
@@ -295,7 +296,7 @@ export const projects = [
       // },
       {
         name: "Arpit Kumar",
-        img: "https://avatars.githubusercontent.com/u/100614635?v=4",
+        img: IMAGE1,
         linkedin: "https://www.linkedin.com/in/apt1075/",
         github: "https://github.com/Apt1075",
       },
