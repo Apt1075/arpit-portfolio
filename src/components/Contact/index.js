@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { Snackbar } from '@mui/material';
-
+import { useState } from 'react';
 const Container = styled.div`
 display: flex;
 flex-direction: column;
@@ -124,22 +124,45 @@ const ContactButton = styled.input`
 
 const Contact = () => {
 
-  //hooks
   const [open, setOpen] = React.useState(false);
   const form = useRef();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    emailjs.sendForm('service_yr8n2ql', 'template_isav3bf', form.current, 'scRB1gjdHIRbFRbpf')
-      .then((result) => {
-        setOpen(true);
-        form.current.reset();
-      }, (error) => {
-        console.log(error.text);
-      });
+  const [formData, setFormData] = useState({
+    from_email: form.current ? form.current.from_email.value : '',
+    from_name: form.current ? form.current.from_name.value : '',
+    subject: form.current ? form.current.subject.value : '',
+    message: form.current ? form.current.message.value : '',
+  });
+
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  try {
+    await emailjs.send(
+      'service_yr8n2ql',
+      'template_isav3bf',
+      {
+        from_name: form.current ? form.current.from_name.value : '',
+        from_email: form.current ? form.current.from_email.value : '',
+        subject: form.current ? form.current.subject.value : '',
+        message: form.current ? form.current.message.value : '',
+      },
+      'scRB1gjdHIRbFRbpf'
+    );
+
+    setOpen(true);
+    setFormData({
+      from_email: '',
+      from_name: '',
+      subject: '',
+      message: '',
+    });
+
+  } catch (error) {
+    console.error("EmailJS Error:", error);
   }
-
-
+};
 
   return (
     <Container>
