@@ -1,5 +1,6 @@
 import CiCDPipelineDiagram from "../images/CiCDPipelineDiagram.png";
 import IMAGE1 from "../images/Heroimage1.png";
+import awslambda from "../images/awslambda.png";
 
 
 export const Bio = {
@@ -94,7 +95,7 @@ export const skills = [
         image:"https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg",
       },
       {
-        name: "AWS(S3,VPC,IAM,CloudWatch,EC2,DynamoDB and RDS)",
+        name: "AWS(EC2,S3,VPC,IAM,CloudWatch,DynamoDB and RDS)",
         image:"https://www.svgrepo.com/show/448299/aws.svg",
       },
       {
@@ -248,30 +249,41 @@ export const projects = [
   //     },
   //   ],
   // },
-  // {
-  //   id: 1,
-  //   title: "Vexa",
-  //   date: "Oct 2022 - Present",
-  //   description:
-  //     "Designed and developed the Vexa project, a project management app that helps users and teams stay organized and on track. Implemented key features such as task tracking, team collaboration, and time tracking to improve productivity and project outcomes and also invite team/project members. The plan is to add a community of users where they can find developers and other team members and chat system implementation.",
-  //   image:
-  //     "https://user-images.githubusercontent.com/64485885/234916413-96296f13-fe4b-4cc4-b215-e72bd7c27928.png",
-  //   tags: [
-  //     "React Js",
-  //     "MongoDb",
-  //     "Node Js",
-  //     "Express Js",
-  //     "Redux",
-  //     "NodeMailer",
-  //   ],
-  //   category: "AWS app",
-  //   github: "#",
-  //   webapp: "https://vexa-app.netlify.app/",
-  // },
+  {
+    id: 1,
+    title: "AI-joke-generator-AWS-Lambda-integration",
+    date: "Jan 2025 - Jan 2025",
+    description:
+      "AI Joke Generator is a serverless web application built with Next.js and AWS Lambda, integrated with the OpenAI API to generate funny jokes based on user input. The backend is exposed via API Gateway, ensuring scalability, security, and low latency using a fully serverless architecture. The application features a user-friendly interface, allowing users to input topics and receive AI-generated jokes in real-time. This project showcases the seamless integration of modern web development with serverless cloud computing and AI technologies.",
+    image: awslambda,
+tags: [
+  "Next.js",
+  "React.js",
+  "AWS Lambda",
+  "Amazon API Gateway",
+  "Serverless Architecture",
+  "OpenAI API",
+  "JavaScript",
+  "Node.js",
+  "REST API",
+  "CORS",
+],
+    category: "AWS app",
+    github: "https://github.com/Apt1075/AI-joke-generator-AWS-Lambda-integration.git",
+    webapp: "https://ai-joke-generator-aws-lambda-integr.vercel.app/",
+     member: [
+      {
+        name: "Arpit Kumar",
+        img: IMAGE1,
+        linkedin: "https://www.linkedin.com/in/apt1075/",
+        github: "https://github.com/Apt1075",
+      },
+    ],
+  },
 {
   id: 3,
   title: "CI/CD React DevOps Project",
-  date: "Dec 2024 - Present",
+  date: "Dec 2024 - Dec 2024",
   description:
     "This single-page React application was developed by Arpit Kumar to demonstrate a real-world CI/CD pipeline using modern DevOps practices. GitHub webhooks are used to automatically trigger Jenkins builds on every code push. Jenkins builds a Docker image, deploys the application on an EC2 instance, and sends email notifications for build success or failure. This project showcases end-to-end CI/CD automation and is suitable for interviews and portfolio demonstration.",
   // image: "../images/CiCDPipelineDiagram.png",
